@@ -4,6 +4,7 @@ header {
 
 .foto-home {
     height: 200px;
+    border-radius: 50%;
 }
 .saudacao p {
     font-size: 1.5em;
