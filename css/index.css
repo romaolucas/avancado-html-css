@@ -64,30 +64,51 @@ header {
     margin-bottom: .5em;
     text-shadow: 2px 2px #000;
 }
+
 .trabalhos {
-    background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
+    background-image: linear-gradient(135deg,
+                        transparent,
+                        transparent 14px,
+                        rgba(0, 0, 0, 0.1) 14px,
+                        rgba(0, 0, 0, 0.1) 15px,
+                        transparent 15px,
+                        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
+
 .trabalhos h2 {
     color: #FFF;
 }
+
 .trabalhos ul {
     overflow: hidden;
     border: .5em solid black;
 }
+
 .trabalhos li {
     float: left;
     width: 33.333%;
 }
+
 .trabalhos img {
     width: 100%;
     display: block;
 }
 .blog {
-    background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
+    background-image: linear-gradient(45deg,
+                        transparent,
+                        transparent 14px,
+                        rgba(255, 255, 255, 0.1) 14px,
+                        rgba(255, 255, 255, 0.1) 15px,
+                        transparent 15px,
+                        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 .blog small {
     position: relative;
