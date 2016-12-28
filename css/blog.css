@@ -7,14 +7,18 @@
     background-color: #E6E7E8;
 }
 
-.post-blog {
-    padding-bottom: 1.5em;
-    margin-bottom: 1em;
-    background-image: linear-gradient(to right,
-    rgba(200, 200, 200, 0),
-    rgba(200, 200, 200, 1),
-    rgba(200, 200, 200, 0));
+.post-blog + .post-blog {
+    /* trocamos padding-bottom e margin-bottom por
+        padding-top e margin-top */
+    padding-top: 1em;
+    margin-top: 1.5em;
+    background-image: linear-gradient(to right, 
+        rgba(200, 200, 200, 0), 
+        rgba(200, 200, 200, 1), 
+        rgba(200, 200, 200, 0)
+    );
     background-size: 100% 1px;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    /* trocamos "bottom center" por "top center" */
+    background-position: top center;
 }
