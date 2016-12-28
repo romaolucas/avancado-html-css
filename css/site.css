@@ -111,11 +111,36 @@ em {
     display: inline-block;
 }
 
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+}
+
 .icones-redes-sociais a {
     width: 40px;
     height: 40px;
     display: block;
     text-indent: -99999px;
+    position: relative;
 }
 
 .github {
