@@ -30,6 +30,14 @@ h1 {
     clear: both;
 }
 
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+    color: red;
+}
+
+
 main a {
     color: #851944;
 }
@@ -45,6 +53,12 @@ main p {
     color: #F2FFFC;
     padding: 1em;
 }
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+}
+
 
 .navegacao-site a {
     color: inherit;

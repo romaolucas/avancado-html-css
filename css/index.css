@@ -119,6 +119,19 @@ header {
     padding: .5em;
     display: block;
 }
+
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
+}
+
+.blog a:hover,
+.blog a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
+}
+
+
 footer {
     background-color: #000;
     color: #FFF;
