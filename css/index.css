@@ -280,7 +280,7 @@ main {
     top: 0;
     right: 0;
     transform-origin: 0 0;
-    transform: translate(6.5765em, -2.4745em) rotate(45deg);
+    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
 }
 
 .palavras-home {
