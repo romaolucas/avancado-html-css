@@ -20,6 +20,27 @@ header {
     height: 200px;
     border-radius: 50%;
 }
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+.saudacao em {
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.saudacao:hover em {
+	animation-play-state: paused;
+}
+
 .saudacao p {
     font-size: 1.5em;
     color: #99A;
@@ -54,7 +75,17 @@ header {
     margin: 2em auto;
     display: block;
     text-align: center;
+    text-decoration: none;
+    transition: .5s;
 }
+
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+}
+
 .secao-inicio {
     padding: 2em;
 }
@@ -281,6 +312,17 @@ main {
     right: 0;
     transform-origin: 0 0;
     transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 .palavras-home {
@@ -289,6 +331,7 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
+    animation: aparece 2s;
 }
 
 .palavras-home li {
