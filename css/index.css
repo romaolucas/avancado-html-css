@@ -6,6 +6,7 @@ html, body {
 body {
     perspective: 6px;
     perspective-origin: 50% 160px;
+    display: block;
 }
 
 .palavras-home, .titulo-principal {
@@ -97,15 +98,10 @@ header {
 }
 
 .trabalhos {
+    background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
-    background-image: linear-gradient(135deg,
-                        transparent,
-                        transparent 14px,
-                        rgba(0, 0, 0, 0.1) 14px,
-                        rgba(0, 0, 0, 0.1) 15px,
-                        transparent 15px,
-                        transparent);
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px, transparent 15px, transparent);
     background-size: 20px 20px;
     background-attachment: fixed;
 }
@@ -117,11 +113,25 @@ header {
 .trabalhos ul {
     overflow: hidden;
     border: .5em solid black;
+    display: flex;
 }
 
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    flex: 1;
+    border: .5em solid #000;
+}
+
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
 }
 
 .trabalhos img {
